@@ -1,0 +1,10 @@
+ID,Name,Age,Salary,Department,Joined
+1,Alice,25,50000,HR,2020-01-15
+2,Bob,30,60000,Finance,2019-03-22
+2,Bob,30,60000,Finance,2019-03-22
+3,Charlie,,75000,IT,2021-06-30
+4,David,22,,HR,2018-09-14
+5,Eve,29,54000,Finance,2020-11-01
+6,,34,62000,,2023-05-01
+7,Grace,33,,IT,2017-05-25
+,None,40,70000,IT,2016-02-29
