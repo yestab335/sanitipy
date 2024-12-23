@@ -5,12 +5,12 @@ class Preprocessor:
   def __init__(self, data: pd.DataFrame):
     self.data = data
   
-  def infer_data_types(df):
+  def infer_data_types(self, df):
     for col in df.columns:
       if df[col].dtype == 'object':
         # Check for datetime columns
         try:
-          pd.to_datetime(df[col])
+          pd.to_datetime(df[col], format="%Y/%m/%d")
           df[col] = pd.to_datetime(df[col], errors='coerce')
         except (ValueError, TypeError):
           pass
@@ -18,7 +18,7 @@ class Preprocessor:
       # Fill in NaN values with the mode (mode frequent value) if applicable
       if df[col].dtype == 'object':
         df[col] = df[col].astype('string')
-      elif df[col].dtype == 'float64' or df[col] == 'int64':
+      elif df[col].dtype in ['float64', 'int64']:
         df[col] = pd.to_numeric(df[col], errors='coerce')
     
     return df
