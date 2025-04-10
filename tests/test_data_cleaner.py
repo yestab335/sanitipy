@@ -1,6 +1,6 @@
 import unittest
 import pandas as pd
-from data_cleaning.data_cleaner import DataCleaner
+from sanitipy.data_cleaner import DataCleaner
 
 class TestDataCleaner(unittest.TestCase):
   def test_remove_duplicates(self):
