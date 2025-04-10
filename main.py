@@ -1,6 +1,6 @@
 import pandas as pd
-from data_cleaning.data_cleaner import DataCleaner
-from data_cleaning.preprocessor import Preprocessor
+from sanitipy.data_cleaner import DataCleaner
+from sanitipy.preprocessor import Preprocessor
 
 def main():
   # Load sample data
