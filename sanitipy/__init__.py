@@ -1,1 +1,1 @@
-from .main import AutoClean
+from .sanitipy import DataCleaner
