@@ -3,7 +3,7 @@ import pandas as pd
 from sanitipy.sanitipy import DataCleaner
 
 class TestRemoveDuplicates(unittest.TestCase):
-  def set_up(self):
+  def setUp(self):
     self.data = pd.DataFrame({
       'A': [1, 1, 2, 2],
       'B': [3, 3, 4, 4]
@@ -12,7 +12,7 @@ class TestRemoveDuplicates(unittest.TestCase):
 
   def test_remove_duplicates_removes_duplicate_rows(self):
     # Call the remove_duplicates() method from the Validator class
-    cleaned_data = self.cleaner.validator.remove_duplicates()
+    cleaned_data = self.cleaner.preprocessor.remove_duplicates()
 
     # Check the length of the cleaned DataFrame
     self.assertEqual(len(cleaned_data), 2)
