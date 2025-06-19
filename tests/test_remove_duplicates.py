@@ -1,18 +1,18 @@
 import unittest
 import pandas as pd
-from sanitipy.sanitipy import DataCleaner
+from sanitipy.preprocessor import Preprocessor
 
 class TestRemoveDuplicates(unittest.TestCase):
-  def setUp(self):
+  def setUp(self) -> None:
     self.data = pd.DataFrame({
       'A': [1, 1, 2, 2],
       'B': [3, 3, 4, 4]
     })
-    self.cleaner = DataCleaner(self.data)
+    self.preprocessor = Preprocessor()
 
   def test_remove_duplicates_removes_duplicate_rows(self):
-    # Call the remove_duplicates() method from the Validator class
-    cleaned_data = self.cleaner.preprocessor.remove_duplicates()
+    # Call the remove_duplicates() method from the Preprocessor class
+    cleaned_data = self.preprocessor.remove_duplicates(self.data)
 
     # Check the length of the cleaned DataFrame
     self.assertEqual(len(cleaned_data), 2)
