@@ -10,7 +10,7 @@ class TestInferDataTypes(unittest.TestCase):
     data = pd.DataFrame({
       'date_col': ['2021/01/01', '2022/12/31', 'not a date'],
       'numeric_col': [10, 20, 30],
-      'string_col': ['apple', 'banana', 'cherry']
+      'string_col': ['apple', 'banana', 'cherry'],
     })
     result = self.preprocessor.infer_data_types(data)
 
