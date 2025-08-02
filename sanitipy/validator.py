@@ -1,5 +1,3 @@
-import pandas as pd
-
 class Validator:
   def validate_data_types(self) -> bool:
     # Check for consistent data types
