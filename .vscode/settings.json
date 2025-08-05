@@ -1,0 +1,8 @@
+{
+  "python.formatting.provider": "yapf",
+  "editor.formatOnSave": true,
+  "python.formatting.yapfPath": ".env/bin/yapf",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  }
+}
