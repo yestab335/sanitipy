@@ -1,0 +1,13 @@
+[style]
+based_on_style = pep8
+indent_width = 2
+use_tabs = false
+column_limit = 88
+allow_multiline_dictionary_keys = true
+coalesce_brackets = true
+split_all_comma_separated_values = true
+
+# Ensure trailing commas where allowed
+split_complex_comprehension = true
+split_arguments_when_comma_terminated = true
+each_dict_entry_on_separate_line = false
