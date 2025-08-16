@@ -1,5 +1,5 @@
 import pandas as pd
-from sklearn.preprocessing import StandardScaler
+# from sklearn.preprocessing import StandardScaler
 
 class Preprocessor:
   """
@@ -110,10 +110,6 @@ class Preprocessor:
         data_frame[col] = pd.to_numeric(data_frame[col], errors='coerce')
     
     return data_frame
-  
-  # def ignore_column(self, column: list) -> None:
-  #   """Ignore specified columns in future processing"""
-  #   self.columns_to_ignore = column
   
   # def normalize_data(self):
   #   """Normalize numeric columns in the DataFrame using StandardScaler"""
