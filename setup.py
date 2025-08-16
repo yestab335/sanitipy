@@ -17,7 +17,7 @@ setup(
   # Note: Always update the version number
   version='1.1.0',
   packages=find_packages(),
-  license='GNU',
+  license='MIT',
   install_requires=[
     # Add dependencies here.
     'pandas',
@@ -35,14 +35,6 @@ setup(
   ],
   classifiers=[
     'Development Status :: 5 - Production/Stable',
-    'Intended Audience :: Developers :: Data Scientists',
-    'License :: GNU License',
-    'Programming Language :: Python 3.7',
-    'Programming Language :: Python 3.8',
-    'Programming Language :: Python 3.9',
-    'Programming Language :: Python 3.10',
-    'Programming Language :: Python 3.11',
-    'Programming Language :: Python 3.12',
-    'Programming Language :: Python 3.13',
+    'Intended Audience :: Developers',
   ],
 )
