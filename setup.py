@@ -21,9 +21,7 @@ setup(
   install_requires=[
     # Add dependencies here.
     'pandas',
-    'numpy',
-    'scikit-learn',
-    'matplotlib',
+    'missingno',
   ],
   url='https://github.com/yestab335/sanitipy',
   download_url='',
