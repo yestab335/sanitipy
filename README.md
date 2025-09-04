@@ -99,4 +99,4 @@ Used internally by `DataCleaner` to check data quality.
 Constributions are welcome! If you have suggestions for improvements or new features, please open an issue or submit a pull request.
 
 ## License
-This project is licensed under the GNU License - see the [LICENSE](./LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
